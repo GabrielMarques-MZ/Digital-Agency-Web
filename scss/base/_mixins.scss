@@ -1,0 +1,17 @@
+@mixin tamanho-font($size) {
+    font-family: $font-1;
+    @if $size == 30 {
+        font-style: normal;
+        font-weight: bold;
+        font-size: 1.563rem;
+        line-height: 155.2%;
+        color: $text-header-1;
+    }
+    @if $size == 16 {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 1rem;
+        line-height: 1.5rem;
+    }
+}
+
