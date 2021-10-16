@@ -1,0 +1,60 @@
+.section__one {
+    padding-top: $top-section;
+    background: url(../../img/bg_section1.png) no-repeat;
+    background-position: bottom;
+    background-size: cover;
+    width: 100%;
+    &__conteudo {
+        display: flex;
+        &__texto {
+            span {
+                color: $text-section-1;
+                margin-bottom: $bottom;
+                @include tamanho-font(20);
+            }
+            h1 {
+                color: $text-section-2;
+                margin-bottom: $bottom;
+                width: 479.63px;
+                @include tamanho-font(50);
+                @media (min-width: 320px) and (max-width: 770px) {
+                    width: 100%;
+                }
+                @media (max-width: 990px) {
+                    width: 100%;
+                }
+            }
+            p {
+                color: $text-section-2;
+                width: 527px;
+                @include tamanho-font(16.1);
+                @media (min-width: 320px) and (max-width: 770px) {
+                    width: 100%;
+                    text-align: center;
+                }
+                @media (max-width: 990px) {
+                    width: 100%;
+                    text-align: center;
+                }
+            }
+            a {
+                margin-top: 100px;
+                @include btn-primary;
+                @include tamanho-font(16);
+            }
+        }
+        &__imagem {
+            img {
+                width: 100%;
+            }
+        }
+        @media (min-width: 320px) and (max-width: 770px) {
+            flex-direction: column;
+            text-align: center;
+        }
+        @media (max-width: 990px) {
+            flex-direction: column;
+            text-align: center;
+        }
+    }
+}

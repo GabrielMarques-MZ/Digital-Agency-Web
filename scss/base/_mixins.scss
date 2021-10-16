@@ -13,5 +13,33 @@
         font-size: 1rem;
         line-height: 1.5rem;
     }
+    @if $size == 16.1 {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 1rem;
+        line-height: 200%;
+    }
+    @if $size == 20 {
+        font-style: normal;
+        font-weight: bold;
+        font-size: 1.25rem;
+        line-height: 155.2%;
+    }
+    @if $size == 50 {
+        font-style: normal;
+        font-weight: bold;
+        font-size: 3.125rem;
+        line-height: 155.2%;
+    }
 }
 
+
+@mixin btn-primary() {
+    background: $btn-primary;
+    text-decoration: none;
+    cursor: pointer;
+    border-radius: 40px;
+    padding: 15px;
+    display: inline-block;
+    color: $text-section-3;
+}

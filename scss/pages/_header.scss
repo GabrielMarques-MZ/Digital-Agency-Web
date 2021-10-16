@@ -15,8 +15,41 @@ header {
         .nav {
             #btn-mobile {
                 display: none;
-                @media (max-width: 770px) {
+                @media (min-width: 320px) and (max-width: 770px) {
+                    display: flex;
+                    padding: .5rem 1rem;
+                    font-size: 1rem;
+                    border: none;
+                    background: none;
+                    cursor: pointer;
+                }
+                #hamburger {
+                    width: 20px;
+                    border-top: 2px solid;
+                    gap: .5rem;
                     display: block;
+                    transition: .3s;
+                    color: $bg-header-2;
+                    &:after {
+                        content: '';
+                        display: block;
+                        width: 20px;
+                        height: 2px;
+                        background: currentColor;
+                        margin-top: 5px;
+                        transition: .3s;
+                        position: relative;
+                    }
+                    &:before {
+                        content: '';
+                        display: block;
+                        width: 20px;
+                        height: 2px;
+                        background: currentColor;
+                        margin-top: 5px;
+                        transition: .3s;
+                        position: relative;
+                    }
                 }
             }
             .menu{
@@ -28,8 +61,11 @@ header {
                         padding: 15px;
                         background: $bg-header-2;
                         color: $text-header-2;
-                        @media (max-width: 770px){
+                        @media (min-width: 320px) and  (max-width: 770px){
                             padding: 5px;
+                            display: block;
+                            text-align: center;
+
                         }
                     }
                     a{
@@ -37,26 +73,50 @@ header {
                         color: $text-header-1;
                         @include tamanho-font(16px);
                     }
-                    @media (max-width: 770px){
+                    @media (min-width: 320px) and (max-width: 770px){
                         padding: 1rem;
+                        border-bottom: 2px solid $bg-header-2;
                     }
                 }
-                @media (max-width: 770px){
-                    display: none;
+                @media (min-width: 320px) and (max-width: 770px){
+                    display: block;
                     position: absolute;
                     width: 30%;
                     top: 70px;
                     right: 0px;
                     background: $bg-header-1;
-                    height: calc(100vh - 70px);
+                    height: 0;
+                    transition: .6s;
                     z-index: 1000;
+                    visibility: hidden;
+                    overflow-y: hidden;
                 }
             }
         }
     }
 }
 
-#nav.active #menu{
-    display: block;
+#nav.active {
+    #btn-mobile {
+        #hamburger {
+            border-top-color: transparent;
+            &:after {
+                top: -7px;
+                transform: rotate(-135deg);
+                transition: .3s;
+            }
+            &:before {
+                transform: rotate(135deg);
+                transition: .3s;
+            }
+        }
+    }
+    #menu {
+        display: block;
+        height: calc(100vh - 70px);
+        visibility: visible;
+        overflow:auto;
+    }
+    
 }
 
