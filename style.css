@@ -12004,4 +12004,106 @@ header .header .nav .menu li a {
   }
 }
 
+.section__two {
+  padding-top: 83px;
+}
+.section__two__conteudo h2 {
+  text-align: center;
+  color: #222222;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 25px;
+  line-height: 187.5%;
+}
+.section__two__conteudo h3 {
+  padding-top: 50px;
+  color: #222222;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 1.563rem;
+  line-height: 155.2%;
+}
+.section__two__conteudo p {
+  width: 545px;
+  color: #525252;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 200%;
+}
+
+.footer {
+  background: #000000;
+  margin-top: 100px;
+}
+.footer__conteudo {
+  padding: 50px 0 50px 0;
+  display: flex;
+  justify-content: space-between;
+  color: #FFFFFF;
+}
+.footer__conteudo__logo {
+  padding-right: 40px;
+}
+.footer__conteudo__logo a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 25px;
+  line-height: 187.5%;
+}
+.footer__conteudo__logo p {
+  padding-top: 25px;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+.footer__conteudo__logo .logo-footer {
+  margin-top: 25px;
+  text-decoration: none;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+.footer__conteudo__nav {
+  padding-right: 40px;
+}
+.footer__conteudo__nav h2 {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 25px;
+}
+.footer__conteudo__nav li {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 186.3%;
+}
+.footer__conteudo__contact {
+  padding-right: 40px;
+}
+.footer__conteudo__contact h2 {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 25px;
+}
+.footer__conteudo__social ul {
+  display: flex;
+}
+
 /*# sourceMappingURL=style.css.map */

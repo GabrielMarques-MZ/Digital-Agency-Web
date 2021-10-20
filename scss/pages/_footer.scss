@@ -1,0 +1,60 @@
+.footer {
+    background: $bg-footer;
+    margin-top: $top-footer;
+    &__conteudo {
+        padding: 50px 0 50px 0;
+        display: flex;
+        justify-content: space-between;
+        color: $text-footer-1;
+        &__logo {
+            padding-right: $right-footer;
+            a {
+                text-decoration: none;
+                text-transform: uppercase;
+                color: $text-footer-1;
+                @include tamanho-font(25);
+            }
+            p {
+                padding-top: $top;
+                @include tamanho-font(16);
+            }
+            .logo-footer {
+                margin-top: $top;
+                text-decoration: none;
+                @include tamanho-font(16);
+            }
+        }
+        &__nav {
+            padding-right: $right-footer;
+            h2 {
+                font-family: Poppins;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 17px;
+                line-height: 25px; 
+            }
+            li {
+                font-family: Poppins;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 16px;
+                line-height: 186.3%;
+            }
+        }
+        &__contact {
+            padding-right: $right-footer;
+            h2 {
+                font-family: Poppins;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 17px;
+                line-height: 25px; 
+            }
+        }
+        &__social {
+            ul {
+                display: flex;
+            }
+        }
+    }
+}

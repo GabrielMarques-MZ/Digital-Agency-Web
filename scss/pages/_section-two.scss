@@ -1,0 +1,20 @@
+.section__two {
+    padding-top: $top-section-two;
+    &__conteudo {
+        h2 {
+            text-align: center;
+            color: $text-section-4;
+            @include tamanho-font(25);
+        }
+        h3 {
+            padding-top: 50px;
+            color: $text-section-4;
+            @include tamanho-font(30.1);
+        }
+        p {
+            width: 545px;
+            color: $text-section-5;
+            @include tamanho-font(16.1);
+        }
+    }
+}
